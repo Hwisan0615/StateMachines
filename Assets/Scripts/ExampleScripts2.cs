@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExampleScript_c : MonoBehaviour
+public class ExampleScripts2 : MonoBehaviour
 {
-    public enum EName
+    public enum Ename
     {
         Jen,
         Marc,
@@ -12,19 +12,18 @@ public class ExampleScript_c : MonoBehaviour
         Jessica
     }
 
-    public EName name = EName.Jen;
+    public Ename name = Ename.Jen;
 
     public string str_name;
-
     // Start is called before the first frame update
     void Start()
     {
         switch(name)
         {
-            case EName.Jen: Debug.Log("My name is Jen"); break;
-            case EName.Marc: Debug.Log("My name is Marc"); break;
-            case EName.Jose: Debug.Log("My name is Jose"); break;
-            case EName.Jessica: Debug.Log("My name is Jessica"); break;
+            case Ename.Jen: Debug.Log("My name is Jen"); break;
+            case Ename.Marc: Debug.Log("My name is Marc"); break;
+            case Ename.Jose: Debug.Log("My name is Jose"); break;
+            case Ename.Jessica: Debug.Log("My name is Jessica"); break;
             default: Debug.Log("My name is something"); break;
         }
     }
